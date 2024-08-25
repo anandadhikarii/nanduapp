@@ -1,12 +1,4 @@
-function Home(){
-return(
-
-    <div>
-THIS IS HOME PAGE
-
-    </div>
-);
-
-
+function Home() {
+  return <div>THIS IS HOME PAGE</div>;
 }
 export default Home;

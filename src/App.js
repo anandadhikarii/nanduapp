@@ -1,15 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import Page3 from './Page3';
-import Home from  './Home';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
+import Page3 from "./Page3";
+import Home from "./Home";
 
 function App() {
   return (
-    <Router >
-      <div >
+    <Router>
+      <div>
         <nav>
           <ul>
             <li>
@@ -22,7 +21,7 @@ function App() {
               <Link to="/Page2">Page2</Link>
             </li>
             <li>
-            <Link to="/Page3">Page3</Link>
+              <Link to="/Page3">Page3</Link>
             </li>
           </ul>
         </nav>
