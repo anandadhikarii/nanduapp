@@ -9,7 +9,7 @@ function Page2() {
         <h2 align="center" style={{ color: "#000000" }}>
           H1
         </h2>
-        <h3 align="center">h3</h3>
+        <h3 align="center">WELCOME to page 2</h3>
       </div>
     </>
   );

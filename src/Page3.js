@@ -8,7 +8,7 @@ function Page3() {
         <h2 align="center" style={{ color: "#FFFFFF" }}>
           H1
         </h2>
-        <h3 align="center">h3</h3>
+        <h3 align="center">welcome to page 3</h3>
       </div>
     </>
   );
