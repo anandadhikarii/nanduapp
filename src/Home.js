@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "./images/logo.jpg";
-import img2 from "./images/qr.svg";
+import img2 from "./images/qr.jpg";
 
 function Home() {
   return (
