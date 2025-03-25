@@ -1,3 +1,4 @@
+import img1 from './images/web.jpeg';
 function Page1() {
   return (
     <>

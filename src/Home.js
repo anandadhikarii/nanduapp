@@ -1,12 +1,11 @@
-function Home(){
-return(
-
-    <div>
-THIS IS HOME PAGE
-
-    </div>
-);
-
-
+import img1 from './images/web.jpeg';
+function Home() {
+    return (
+        <div>
+          <img src={img1} alt=""/>
+           
+        </div>
+    );
 }
+
 export default Home;
