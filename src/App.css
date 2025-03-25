@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.Headeralignment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.Headeralignment a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+}
+
+.Headeralignment a:hover {
+  color: #007bff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,6 +53,4 @@
   to {
     transform: rotate(360deg);
   }
-
-  
 }
