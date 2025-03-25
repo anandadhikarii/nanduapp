@@ -1,11 +1,11 @@
-import img1 from "./images/logo.jpg"; // Import your image
+import img1 from "./images/logo.jpg"; // Import your background image (if needed)
 
 function Page3() {
   return (
     <>
       <div
         style={{
-          backgroundImage: `url(${img1})`,
+          backgroundImage: `url(${img1})`, // This is your background image
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -21,17 +21,13 @@ function Page3() {
 
           {/* Hyperlinked email address */}
           <h2 style={{ color: "#ffffff" }}>
-            <a href="mailto:manamarteru@gmail.com" style={{ color: '#ffffff', textDecoration: 'none' }}>
+            <a
+              href="mailto:manamarteru@gmail.com"
+              style={{ color: "#ffffff", textDecoration: "none" }}
+            >
               manamarteru@gmail.com
             </a>
           </h2>
-          <iframe 
-        src="https://drive.google.com/file/d/1EUJDtMPxVguxZgShfU_axL6So_dGEU6k/preview" 
-        width="640" 
-        height="480" 
-        frameBorder="0" 
-      ></iframe>
-
 
           <h1 style={{ color: "#ffffff" }}>THANK YOU</h1>
         </div>
