@@ -4,55 +4,43 @@ import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
 import Home from './Home';
+import logo from './images/marteru logo.png'; // Make sure to import your logo image
 
 function App() {
   return (
     <Router>
       <div>
         {/* Header with black background */}
-        <header style={{ backgroundColor: 'black', padding: '10px 0' }}>
-          <nav style={{ textAlign: 'center', marginBottom: '20px' }}>
+        <header style={{ backgroundColor: '#00214D', padding: '10px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+          
+          {/* Navigation section */}
+          <nav>
             <ul style={{
               listStyle: 'none',
               padding: 0,
               display: 'flex',
-              justifyContent: 'center',
               gap: '20px',
             }}>
               <li>
-                <Link
-                  to="/"
-                  style={buttonStyle}
-                >
-                  Home
-                </Link>
+                <Link to="/" style={buttonStyle}>Home</Link>
               </li>
               <li>
-                <Link
-                  to="/Page1"
-                  style={buttonStyle}
-                >
-                  Page1
-                </Link>
+                <Link to="/Page1" style={buttonStyle}>Attractions</Link>
               </li>
               <li>
-                <Link
-                  to="/Page2"
-                  style={buttonStyle}
-                >
-                  Page2
-                </Link>
+                <Link to="/Page2" style={buttonStyle}>Videos</Link>
               </li>
               <li>
-                <Link
-                  to="/Page3"
-                  style={buttonStyle}
-                >
-                  Page3
-                </Link>
+                <Link to="/Page3" style={buttonStyle}>About Us</Link>
               </li>
             </ul>
           </nav>
+
+          {/* Logo and Text section - positioned at the top right */}
+          <div style={{ position: 'absolute', top: '10px', right: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img src={logo} alt="Logo" style={logoStyle} />
+            <span style={{ color: 'white', fontSize: '18px' }}>mana.marteru</span>
+          </div>
         </header>
 
         <Routes>
@@ -66,17 +54,23 @@ function App() {
   );
 }
 
-// Button styling
+// Button styling for navigation links
 const buttonStyle = {
   textDecoration: 'none',
-  padding: '10px 20px',
+  padding: '10px 10px',
   backgroundColor: '#4CAF50',
   color: 'white',
   borderRadius: '5px',
-  border: 'none',
+  border: '5px',
   fontSize: '16px',
   cursor: 'pointer',
   transition: 'background-color 0.3s',
+};
+
+// Logo styling
+const logoStyle = {
+  width: '60px', // Adjust size of the logo
+  height: '60px', // Adjust size of the logo
 };
 
 export default App;
