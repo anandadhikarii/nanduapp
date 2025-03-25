@@ -113,7 +113,6 @@ const Text = styled.span`
   font-size: 18px;
 `;
 
-
 // Responsive Styles using Media Queries
 const mediaQueries = `
   @media screen and (max-width: 768px) {
