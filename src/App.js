@@ -57,6 +57,15 @@ const Header = styled.header`
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+  }
 `;
 
 const Nav = styled.nav`
@@ -64,6 +73,11 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const NavList = styled.ul`
@@ -74,6 +88,11 @@ const NavList = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const NavItem = styled.li`
@@ -92,6 +111,16 @@ const StyledLink = styled(Link)`
   white-space: nowrap;
   display: inline-block;
   min-width: 100px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -106,49 +135,21 @@ const LogoContainer = styled.div`
 const Logo = styled.img`
   width: 60px;
   height: 60px;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const Text = styled.span`
   color: white;
   font-size: 18px;
-`;
-
-// Responsive Styles using Media Queries
-const mediaQueries = `
-  @media screen and (max-width: 768px) {
-    ${Header} {
-      flex-direction: column;
-      padding: 20px 0;
-    }
-    ${Nav} {
-      flex-direction: column;
-      align-items: center;
-    }
-    ${NavList} {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    ${Logo} {
-      width: 50px;
-      height: 50px;
-    }
-    ${StyledLink} {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    ${StyledLink} {
-      font-size: 12px;
-      padding: 8px 12px;
-    }
-    ${Logo} {
-      width: 40px;
-      height: 40px;
-    }
-  }
 `;
 
 export default App;
